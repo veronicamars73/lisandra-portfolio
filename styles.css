@@ -444,7 +444,7 @@ html {
 
 .timeline {
   position: relative;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 1em;
 }
@@ -514,11 +514,31 @@ html {
   overflow: hidden;
 }
 
-.timeline-content h3.timeline-title {
-  margin-top: 0;
-  font-size: 1.8em;
-  color: #222;
-  font-weight: bold;
+@media screen and (min-width: 760px) {
+  .timeline-content h3.timeline-title {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #222;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .timeline-content h3.timeline-title {
+    margin-top: 0;
+    font-size: 1.4em;
+    color: #222;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .timeline-content h3.timeline-title {
+    margin-top: 0;
+    font-size: 1.1em;
+    color: #222;
+    font-weight: bold;
+  }
 }
 
 .timeline-content p {
