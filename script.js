@@ -55,3 +55,9 @@ const toggleButton = document.querySelector('#dark-mode-toggle');
 toggleButton.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
 });
+
+// Toggle details in timeline items
+function toggleDetails(element) {
+  const details = element.querySelector('.details');
+  details.classList.toggle('open');
+}
